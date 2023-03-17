@@ -1,0 +1,788 @@
+/* Fuente de letra atractiva y coherente con la marca */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+/* Colores atractivos y coherentes con la marca */
+:root {
+  --primary-color: #0ab792;
+  --secondary-color: #bdbdbd;
+  --tertiary-color: #212121;
+  --quaternary-color: #ffffff;
+}
+
+/* Estilos generales */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Estilos para el encabezado */
+header {
+  background-color: var(--primary-color);
+  color: var(--quaternary-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Estilos para los títulos */
+h1,
+h2 {
+  font-family: "Roboto", sans-serif;
+  color: var(--tertiary-color);
+  text-align: center;
+}
+
+/* h2 {
+font-size: 1.5rem;
+font-weight: 300;
+text-align: center;
+margin-bottom: 1rem;
+} */
+header .container img {
+  max-width: 70vw;
+  height: auto;
+}
+
+.section {
+  width: 100%;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+  max-width: 90vw;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 20px;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Estilos para la NAV */
+
+.navigation {
+  flex-direction: row;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav a {
+  color: var(--quaternary-color);
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-left: 1rem;
+  transition: color 0.2s ease-in-out;
+}
+
+header nav .nav-link {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #999;
+  margin: 0 10px;
+  transition: color 0.2s;
+}
+
+header nav .nav-link:hover {
+  color: #333;
+}
+
+header nav a:hover {
+  color: var(--tertiary-color);
+}
+
+/* Estilos para las secciones */
+.section {
+  padding: 2rem 0;
+}
+
+/* Estilos para el contenedor principal */
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+}
+
+.section-title {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+}
+
+.nav-link {
+  font-size: 14px;
+  font-weight: 400;
+  color: #999;
+  margin: 0 10px;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: #333;
+}
+
+/* Estilos para el botón de idioma */
+#english-button {
+  background-color: transparent;
+  border: none;
+  color: var(--secondary-color);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+#english-button:hover {
+  color: var(--primary-color);
+}
+
+/* Estilos para la sección "Inicio" */
+.home-section {
+  background-color: var(--tertiary-color);
+  color: var(--quaternary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+/* .home-section p,
+.about-section p{
+  margin-bottom: 1rem;
+} */
+
+.home-section p,
+.about-section p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.home-section .card {
+  box-shadow: 0px 2px 5px 1px rgba(255, 255, 255, 0.2);
+}
+
+/* Estilos para la sección "Acerca de mí" */
+.about-section {
+  background-color: var(--quaternary-color);
+  color: var(--tertiary-color);
+}
+
+.about-section ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--tertiary-color);
+}
+
+.about-section ul li {
+  margin: 0 10px;
+}
+
+.about-section ul li a {
+  color: var(--);
+  font-size: 1.2rem;
+  transition: color 0.2s ease-in-out;
+  color: var(--quaternary-color);
+
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.about-section ul li a:hover {
+  color: var(--tertiary-color);
+  background-color: var(--secondary-color);
+  border-radius: 0.5rem;
+}
+
+.about-section ul li i {
+  margin-right: 5px;
+}
+
+/* ///// Estilos para la sección "PORTAFOLIO" ///// */
+.portfolio-section {
+  background-color: var(--secondary-color);
+  color: var(--tertiary-color);
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center;
+justify-content: center; */
+}
+.container-port {
+  max-width: 90vw;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.portfolio-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.portfolio-item {
+  width: calc(33.33% - 20px); /* 20px de margen */
+  margin: 10px;
+  background-color: var(--quaternary-color);
+  color: var(--tertiary-color);
+  padding: 1rem;
+  text-align: center;
+}
+
+.portfolio-item a {
+  color: var(--secondary-color);
+  transition: color 0.2s;
+}
+
+.portfolio-item a:hover {
+  color: var(--quaternary-color);
+}
+
+.portfolio-item p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.02rem;
+}
+
+.portfolio-section .text-header {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin: 0;
+}
+.portfolio-section .tags {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  margin: 0;
+}
+
+.portfolio-section .tags li {
+  font-size: 1rem;
+  margin: 0.25rem 2rem 0.25rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+/* elementos de la lista PORTFOLIO */
+.portfolio-section ul {
+  list-style-type: none;
+  /*   background-color: var(--primary-color); */
+}
+
+.portfolio-section li a {
+  display: block;
+  color: var(--tertiary-color);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.portfolio-section li a:hover {
+  background-color: var(--secondary-color);
+}
+
+/* ////// Estilos para la sección "CONTCACTO" ///// */
+.contact-section {
+  background-color: var(--quaternary-color);
+  color: var(--tertiary-color);
+}
+
+.section-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0 0 20px 0;
+}
+
+/* Estilos para el formulario de contacto */
+.contact-section form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+form label,
+form input,
+form textarea,
+form button {
+  font-size: 1rem;
+  margin: 5px 0;
+  padding: 10px;
+  width: calc(100% - 20px); /* 20px de margen */
+  border: none;
+  resize: none;
+  border-radius: 5px;
+  background-color: var(--quaternary-color);
+  color: var(--tertiary-color);
+  transition: background-color 0.2s ease-in-out;
+}
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  border: 2px solid var(--secondary-color);
+  border-radius: 4px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input:focus,
+form textarea:focus {
+  background-color: var(--primary-color);
+  color: var(--quaternary-color);
+}
+
+form input[type="submit"] {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 20px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+form input[type="submit"]:hover {
+  background-color: var(--primary-color);
+}
+
+/* Estilos para la lista de redes sociales */
+
+.social-media-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media-item {
+  list-style: none;
+  padding: 0 1rem;
+}
+
+.social-media-item a {
+  color: #999;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: color 0.2s;
+}
+
+.social-media-item a:hover {
+  color: var(--primary-color);
+}
+
+.social-media-item i {
+  font-size: 1.5rem;
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--tertiary-color);
+  color: var(--quaternary-color);
+  padding: 1rem;
+  text-align: center;
+  flex-direction: column;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 1rem 0;
+}
+
+footer ul li a {
+  color: var(--);
+  font-size: 1.2rem;
+  transition: color 0.2s ease-in-out;
+  padding: 10px;
+}
+
+footer li a:hover {
+  color: var(--primary-color);
+  background-color: var(--tertiary-color);
+  border-radius: 0.5rem;
+}
+
+footer ul li i {
+  margin-right: 5px;
+}
+
+.copyright {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  color: #999;
+  margin: 20px 0;
+}
+
+.error {
+  color: red;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+#menu-toggle {
+  display: none;
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+
+  display: none;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.6rem;
+  width: 100%;
+  height: auto;
+  /*   position: fixed;
+  top: 1rem;
+  right: 1rem; */
+  /*   z-index: 2; */
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+#menu-toggle:hover {
+  transform: scale(1.04);
+  background-color: var(--tertiary-color);
+  color: var(--quaternary-color);
+}
+
+#menu a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  transition: all 0.3s ease-in-out;
+}
+
+#menu a:hover {
+  color: var(--tertiary-color);
+  transform: scale(1.1);
+}
+
+/* Media query to change styles on small screens */
+@media (max-width: 489px) {
+  /* Change width of images in container */
+  .portfolio-item img {
+    width: 100%;
+  }
+
+  /* Change styles for container */
+  .container-port {
+    width: 100%;
+  }
+
+  /* Change styles for social media list */
+  .social-media-list {
+    flex-wrap: wrap;
+  }
+
+  .social-media-item {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .social-media-item i {
+    font-size: 1rem;
+  }
+  /* Cambia el tamaño de la letra en la lista de elementos */
+  .about-section ul li a,
+  footer ul li a {
+    font-size: 1rem;
+  }
+
+  /* Hace que la lista se acomode en una sola columna en pantallas pequeñas */
+  .about-section ul,
+  footer ul {
+    flex-direction: column;
+  }
+  /* Change width of images in container */
+  .about-section img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Elimina la clase "menu-hidden" del botón hamburguesa */
+  #menu-toggle {
+    display: block;
+    background-color: var(--secondary-color);
+  }
+
+  /* Oculta el menú */
+  /*  .menu-hidden {
+      display: none;
+    }  */
+
+  /* Muestra el menú */
+  #menu:not(.menu-hidden) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--tertiary-color);
+    padding: 1rem;
+    border-radius: 0.2rem;
+    box-shadow: 0px 0px 10px rgba(160, 180, 135, 0.3);
+    transition: all 0.5s ease-in-out;
+  }
+
+  #menu:not(.menu-hidden) a,
+  #menu:not(.menu-hidden) i {
+    color: var(--primary-color); /* Change this to your desired font color */
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    transition: background-color 0.3s; /* Add a transition effect to the background color */
+  }
+
+  /* Add a hover effect to the dropdown links */
+  #menu:not(.menu-hidden) a:hover,
+  #menu:not(.menu-hidden) i:hover {
+    background-color: var(--primary-color);
+    color: var(
+      --quaternary-color
+    ); /* Change this to your desired hover color */
+  }
+
+  #english-buttom {
+    width: 100%;
+  }
+}
+
+/* Estilos para pantallas menores a 600px */
+@media (max-width: 600px) {
+  .portfolio-item {
+    flex-basis: 100%; /* hace que los elementos ocupen todo el ancho de la pantalla */
+    margin: 10px 0; /* elimina el margen entre los elementos */
+    grid-template-columns: repeat(1, 1fr); /* se mostrará solo 1 columna */
+  }
+
+  /* Cambia el tamaño de la letra en la lista de elementos */
+  .container-port {
+    width: 100%;
+  }
+  .about-section ul li a,
+  footer ul li a {
+    font-size: 1rem;
+    display: block;
+    text-align: center;
+    margin: 0.5rem;
+  }
+
+  /* Change styles for social media list */
+  .social-media-list {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .social-media-item {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .social-media-item i {
+    font-size: 1rem;
+  }
+
+  /* Hace que la lista se acomode en una sola columna en pantallas pequeñas */
+  .about-section ul,
+  footer ul,
+  .menu-hidden {
+    flex-direction: column;
+  }
+  /* Change width of images in container */
+  .about-section img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Elimina la clase "menu-hidden" del botón hamburguesa */
+  #menu-toggle {
+    display: block;
+    background-color: var(--secondary-color);
+  }
+
+  /* Muestra el menú */
+  #menu:not(.menu-hidden) {
+    display: block;
+  }
+
+  /* Muestra el menú */
+  #menu:not(.menu-hidden) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--tertiary-color);
+    padding: 1rem;
+    border-radius: 0.2rem;
+    box-shadow: 0px 0px 10px rgba(160, 180, 135, 0.3);
+    transition: all 0.5s ease-in-out;
+  }
+
+  #menu:not(.menu-hidden) a,
+  #menu:not(.menu-hidden) i {
+    color: var(--primary-color); /* Change this to your desired font color */
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    transition: background-color 0.3s; /* Add a transition effect to the background color */
+  }
+
+  /* Add a hover effect to the dropdown links */
+  #menu:not(.menu-hidden) a:hover,
+  #menu:not(.menu-hidden) i:hover {
+    background-color: var(--primary-color);
+    color: var(
+      --quaternary-color
+    ); /* Change this to your desired hover color */
+  }
+
+  #english-buttom {
+    width: 100%;
+  }
+}
+
+/* Media query to change styles on small screens */
+@media (max-width: 767px) {
+  /* Change width of images in container */
+  .portfolio-item img {
+    width: 100%;
+  }
+
+  /* Change styles for container */
+  .container-port {
+    width: 100%;
+  }
+
+  /* Change styles for social media list */
+  .social-media-list {
+    flex-wrap: wrap;
+  }
+
+  .social-media-item {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .social-media-item i {
+    font-size: 1rem;
+  }
+
+  /* Cambia el tamaño de la letra en la lista de elementos */
+  .about-section ul li a,
+  footer ul li a {
+    font-size: 1rem;
+  }
+
+  /* Hace que la lista se acomode en una sola columna en pantallas pequeñas */
+  .about-section ul,
+  footer ul {
+    flex-direction: column;
+  }
+  /* Change width of images in container */
+  .about-section img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Elimina la clase "menu-hidden" del botón hamburguesa */
+  #menu-toggle {
+    display: block;
+    background-color: var(--secondary-color);
+  }
+  /* Oculta el menú */
+  .menu-hidden {
+    display: none;
+  }
+
+  /* Muestra el menú */
+  #menu:not(.menu-hidden) {
+    display: block;
+  }
+
+  /* Muestra el menú */
+  #menu:not(.menu-hidden) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--tertiary-color);
+    padding: 1rem;
+    border-radius: 0.2rem;
+    box-shadow: 0px 0px 10px rgba(160, 180, 135, 0.3);
+    transition: all 0.5s ease-in-out;
+  }
+
+  #menu:not(.menu-hidden) a,
+  #menu:not(.menu-hidden) i {
+    color: var(--primary-color); /* Change this to your desired font color */
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    transition: background-color 0.3s; /* Add a transition effect to the background color */
+  }
+
+  /* Add a hover effect to the dropdown links */
+  #menu:not(.menu-hidden) a:hover,
+  #menu:not(.menu-hidden) i:hover {
+    background-color: var(--primary-color);
+    color: var(
+      --quaternary-color
+    ); /* Change this to your desired hover color */
+  }
+
+  #english-buttom {
+    width: 100%;
+  }
+}

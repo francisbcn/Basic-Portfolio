@@ -1,0 +1,1122 @@
+/* Fuente de letra atractiva y coherente con la marca */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* Colores atractivos y coherentes con la marca */
+:root {
+--primary-color: #0ab792;
+--secondary-color: #bdbdbd;
+--tertiary-color: #212121;
+--quaternary-color: #ffffff;
+}
+
+/* Estilos generales */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  width: 100vw;
+  height: 100vh;
+
+}
+body {
+font-family: 'Roboto', sans-serif;
+font-size: 1rem;
+line-height: 1.5;
+color: #333;
+}
+  
+a {
+text-decoration: none;
+color: #333;
+}
+
+
+/* Estilos para el encabezado */
+header {
+background-color: var(--primary-color);
+color: var(--quaternary-color);
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 1rem;
+background-color: #fff;
+border-bottom: 1px solid #ddd;
+}
+
+/* Estilos para los títulos */
+h1, h2 {
+font-family: 'Roboto', sans-serif;
+color: var(--primary-color);
+text-align: center;
+}
+
+h2 {
+font-size: 1.5rem;
+font-weight: 300;
+text-align: center;
+margin-bottom: 1rem;
+}
+
+
+/* Mejora de accesibilidad: establecer una relación de contraste adecuada entre el texto y el fondo */
+
+.container {
+max-width: 500px;
+margin: 0 auto;
+padding: 20px;
+
+background-color: #fff;
+color: #333;
+} 
+
+.site-title {
+font-size: 24px;
+font-weight: 500;
+margin: 0 0 10px 0;
+}
+
+.navigation {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.nav-link {
+font-size: 14px;
+font-weight: 400;
+color: #999;
+margin: 0 10px;
+transition: color 0.2s;
+}
+
+.nav-link:hover {
+color: #333;
+}
+
+/* Estilos para las secciones */
+.section {
+padding: 2rem 0;
+}
+
+/* Estilos para la navegación */
+header nav {
+display: flex;
+}
+
+header nav a {
+color: var(--quaternary-color);
+text-decoration: none;
+font-size: 0.8rem;
+font-weight: 500;
+margin-left: 1rem;
+transition: color 0.2s ease-in-out;
+}
+
+header nav
+a:hover {
+color: var(--tertiary-color);
+}
+
+/* Estilos para el contenedor principal */
+
+
+.container ul{
+display: flex;
+}
+
+.container li{
+list-style: none;
+padding-right: 1.5rem;  
+list-style: none;
+padding-right: 1.5rem;
+}
+
+.container a:hover{
+color: #0ab792;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.container p {
+margin-bottom: 1.5rem;
+}
+  
+  /* Estilos del contenido principal */
+  
+
+.section {
+  width: 100%;
+  padding: 20px;
+  
+}
+
+.home-section {
+  background-color: #f8f8f8;
+}
+
+.about-section {
+  background-color: #fff;
+}
+
+.portfolio-section {
+  background-color: #f8f8f8;
+  
+}
+
+.contact-section {
+  background-color: #fff;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0 0 20px 0;
+}
+
+.section-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0 0 20px 0;
+}
+
+.container-port{
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.portfolio-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; 
+  justify-content:space-evenly; 
+}
+
+.portfolio-item {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio-item a {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #999;
+  transition: color 0.2s;
+}
+
+.portfolio-item a:hover {
+  color: #333;
+}
+
+/* Estilos para las imágenes en la lista del portafolio */
+
+
+.portfolio-item img {
+  width: 250px; 
+  height: auto; 
+/*   max-height: 50vw; 
+  max-height: 50vh; */
+/*   object-fit: cover;  */
+  border-radius: 8px;  
+}
+
+/* Estilos para la lista de redes sociales */
+
+
+.social-media-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media-item {
+  list-style: none;
+  padding: 0 1rem;
+}
+
+.social-media-item a {
+  color: #999;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: color 0.2s;
+}
+
+.social-media-item a:hover {
+  color: var(--primary-color);
+}
+
+.social-media-item i {
+  font-size: 1.5rem;
+}
+
+
+/* Estilos para el texto dentro de los elementos de la lista */
+.portfolio-item p {
+  margin-top: 10px; 
+  font-size: 14px; 
+  font-weight: 500; 
+  text-align: center; 
+}
+
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-label,
+.form-input,
+.form-button {
+  width: 100%;
+}
+
+.form-label {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 0 10px 0;
+}
+
+.contact-form #message {
+  resize: none;
+}
+
+.form-input {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px;
+  border: 1px solid #ddd;
+  transition: border-color 0.2s;
+}
+
+.form-input:focus {
+  border-color: #333;
+}
+
+.form-button {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 20px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.form-button:hover {
+  background-color: #666;
+}
+
+/* Estilos del pie de página */
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--quaternary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    padding: 1rem;
+  }
+
+.copyright {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  color: #999;
+  margin: 20px 0;
+}
+
+
+/* Estilos para los botones de idioma */
+#english-button, #spanish-button {
+background-color: var(--primary-color);
+color: var(--quaternary-color);
+padding: 0.5rem 1rem;
+border-radius: 4px;
+cursor: pointer;
+transition: background-color 0.2s ease-in-out;
+}
+
+#english-button:hover, #spanish-button:hover {
+background-color: var(--tertiary-color);
+}
+
+/* Añadimos un estilo para que el cursor sea un "pointer" al pasar sobre los botones de idioma */
+#english-button, #spanish-button {
+cursor: pointer;
+}
+
+/* Añadimos estilos para los elementos de */
+
+header nav a:hover {
+color: var(--tertiary-color);
+}
+
+
+/* Establecer estilos para los botones */
+button {
+background-color: var(--primary-color);
+color: #fff;
+padding: 0.5rem 1rem;
+border: none;
+cursor: pointer;
+transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+background-color: darken(var(--primary-color), 10%);
+}
+
+
+
+
+/* Media query to change styles on small screens */
+@media (max-width: 489px) {
+  /* Change font size of body */
+  body {
+    font-size: 18px;
+  }
+
+  /* Change styles for social media list */
+  .social-media-list {
+    flex-wrap: wrap;
+  }
+
+  .social-media-item {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .social-media-item i {
+    font-size: 1rem;
+  }
+  
+  /* Change styles for navigation */
+  .navigation {
+    flex-direction: row;
+  }
+  /* Change width of images in container */
+  .container img {
+    width: 30px;
+    height: auto;
+  }
+
+}
+
+
+
+/* Media query to change styles on small screens */
+@media (max-width: 767px) {
+  /* Change font size of container */
+  .container {
+    font-size: 14px;
+  }
+
+  /* Change width of images in container */
+  .container img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Change styles for social media list */
+  .social-media-list {
+    flex-wrap: wrap;
+  }
+
+  .social-media-item {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .social-media-item i {
+    font-size: 1rem;
+  }
+  
+  /* Change styles for navigation */
+  .navigation {
+    flex-direction: row;
+  }
+
+  /* Change font size of headings */
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Change styles for navigation links */
+  header nav {
+    flex-direction: column;
+  }
+
+  header nav a {
+    margin: 0.5rem 0;
+  }
+}
+
+
+
+/* ///////////////////// */
+
+/* Fuente de letra atractiva y coherente con la marca */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* Colores atractivos y coherentes con la marca */
+/* :root {
+  --primary-color: #0ab792;
+  --secondary-color: #bdbdbd;
+  --tertiary-color: #212121;
+  --quaternary-color: #ffffff;
+} */
+
+/* Estilos generales */
+/* *, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} */
+
+/* html {
+  width: 100vw;
+  height: 100vh;
+} */
+
+/* body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+} */
+
+/* a {
+  text-decoration: none;
+  color: #333;
+} */
+
+/* Estilos para el encabezado */
+/* header {
+  background-color: var(--primary-color);
+  color: var(--quaternary-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+} */
+
+/* Estilos para los títulos */
+/* h1, h2 {
+  font-family: 'Roboto', sans-serif;
+  color: var(--primary-color);
+  text-align: center;
+} */
+
+/* h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 1rem;
+} */
+
+/* Mejora de accesibilidad: establecer una relación de contraste adecuada entre el texto y el fondo */
+/* .container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  color: #333;
+}
+ */
+/* Estilos para la navegación */
+header nav {
+/*   display: flex;  
+  justify-content: space-between;
+  align-items: cente */
+/*   align-items: center; */
+}
+
+/* header nav a {
+  color: var(--quaternary-color);
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-left: 1rem;
+  transition: color 0.2s ease-in-out;
+}
+ */
+    
+h/* eader nav .nav-link {
+  font-size: 14px;
+  font-weight: 400;
+  color: #999;
+  margin: 0 10px;
+  transition: color 0.2s;
+  }
+  
+  header nav .nav-link:hover {
+  color: #333;
+  }
+
+header nav a:hover {
+  color: var(--tertiary-color);
+} */
+
+
+
+/* Estilos para las secciones */
+.section {
+  padding: 2rem 0;
+}
+
+/* Estilos para el contenedor principal */
+/* .container ul {
+  display: flex;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.site-title {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+}
+
+.nav-link {
+  font-size: 14px;
+  font-weight: 400;
+  color: #999;
+  margin: 0 10px;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: #333;
+} */
+
+/* Estilos para las secciones */
+  .section {
+  padding: 2rem 0;
+}
+
+
+/* 
+
+.home-section {
+  background-color: var(--secondary-color);
+  text-align: center;
+  } */
+  
+/*   .about-section {
+  background-color: var(--tertiary-color);
+  color: var(--quaternary-color);
+  } */
+  
+  /* Estilos para el formulario de contacto */
+/*   form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid var(--primary-color);
+  border-radius: 4px;
+  } */
+  
+ /*  form input[type="submit"] {
+  background-color: var(--primary-color);
+  color: var(--quaternary-color);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  } */
+  
+ /*  form input[type="submit"]:hover {
+  background-color: var(--secondary-color);
+  } */
+  
+  /* Estilos para los botones */
+/*   .btn {
+  background-color: var(--primary-color);
+  color: var(--quaternary-color);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  } */
+  
+/*   .btn:hover {
+  background-color: var(--secondary-color);
+  } */
+  
+  /* Estilos para el pie de página */
+/*   footer {
+  background-color: var(--tertiary-color);
+  color: var(--quaternary-color);
+  padding: 1rem;
+  text-align: center;
+  } */
+  
+  /* Estilos para los elementos de la tabla */
+/*   table {
+  width: 100%;
+  border-collapse: collapse;
+  }
+  
+  th, td {
+  border: 1px solid var(--primary-color);
+  padding: 8px;
+  text-align: left;
+  }
+  
+  th {
+  background-color: var(--primary-color);
+  color: var(--quaternary-color);
+  } */
+  
+  /* Estilos para los elementos de la lista */
+ /*  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--primary-color);
+  }
+  
+  li {
+  float: left;
+  }
+  
+  li a {
+  display: block;
+  color: var(--quaternary-color);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  }
+  
+  li a:hover {
+  background-color: var(--secondary-color);
+  } */
+
+  * Estilos para los botones */
+/*   .btn {
+  background-color: var(--primary-color);
+  color: var(--quaternary-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: background-color 0.2s;
+  }
+  
+  .btn:hover {
+  background-color: var(--tertiary-color);
+  } */
+  
+  /* Estilos para las tarjetas */
+/*   .card {
+  background-color: var(--quaternary-color);
+  color: var(--tertiary-color);
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 20px;
+  } */
+  
+  /* /* Estilos para las imágenes */
+  img {
+  max-width: 100%;
+  } */
+  
+  /* Estilos para el pie de página */
+/*   footer {
+  background-color: var(--secondary-color);
+  color: var(--quaternary-color);
+  text-align: center;
+  padding: 20px;
+  }
+   */
+  /* Estilos para el formulario de contacto */
+/*   form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  color: #333;
+  }
+  
+  form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 500;
+  }
+  
+  form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  }
+  
+  form textarea {
+  height: 200px;
+  }
+  
+  form button {
+  background-color: var(--primary-color);
+  color: var(--quaternary-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: background-color 0.2s;
+  }
+  
+  form button:hover {
+  background-color: var(--tertiary-color);
+  } */
+  
+  /* Estilos para la tabla */
+/*   table {
+  width: 100%;
+  border-collapse: collapse;
+  }
+  
+  table th, table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  }
+  
+  table th {
+  background-color: var(--secondary-color);
+  color: var(--quaternary-color);
+  } */
+  
+  /* Estilos para los mensajes de error */
+/*   .error {
+  color: red;
+  font-weight: 500;
+  margin-top: 10px;
+  } */
+
+/*   .home-section {
+    background-color: var(--secondary-color);
+    color: var(--quaternary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    } */
+    
+    /* Establecer estilos para los elementos de la sección de inicio */
+    .home-section .card {
+    width: 300px;
+    height: 200px;
+    background-color: #fff;
+    color: #333;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Establecer estilos para el botón de la sección de inicio */
+   /*  .home-section .cta-button {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+    transition: background-color 0.2s ease-in-out;
+    } */
+    
+    ./* home-section .cta-button:hover {
+    background-color: var(--tertiary-color);
+    }
+     */
+    /* Establecer estilos para la sección de productos */
+/*     .products-section {
+    background-color: #fff;
+    } */
+    
+    /* Establecer estilos para los productos individuales */
+   /*  .product {
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    } */
+    
+    /* Establecer estilos para la imagen del producto */
+/*     .product img {
+    width: 100%;
+    height: auto;
+    } */
+    
+    /* Establecer estilos para la descripción del producto */
+   /*  .product .product-description {
+    width: 100%;
+    padding-left: 20px;
+    } */
+    
+    /* Establecer estilos para el precio del producto */
+  /*   .product .product-price {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-top: 10px;
+    } */
+    
+    /* Establecer estilos para el botón "Agregar al carrito" */
+  /*   .product .add-to-cart-button {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+    transition: background-color 0.2s ease-in-out;
+    } */
+  
+    
+    /* Estilos para el contenedor principal */
+/*     .container {
+    display: flex;
+    flex-wrap: wrap;
+    } */
+    
+    /* Establecer estilos para el título del sitio y la navegación */
+/*     .site-title {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+    }
+     */
+    
+    /* Establecer estilos para las secciones */
+   /*  .section {
+    padding: 2rem 0;
+    }
+     */
+    
+    /* Establecer estilos para el contenido principal */
+ /*    .home-section {
+    background-color: var(--secondary-color);
+    color: var(--quaternary-color);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    } */
+    
+/*     .home-section h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 1rem;
+    } */
+    
+/*     .home-section p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 1rem;
+    } */
+    
+    /* Establecer estilos para las imágenes */
+ /*    .home-section img {
+    max-width: 100%;
+    height: auto;
+    } */
+    
+    /* Establecer estilos para los botones */
+  /*   .home-section button {
+    background-color: var(--primary-color);
+    color: var(--quaternary-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    } */
+    
+ /*    .home-section button:hover {
+    background-color: var(--tertiary-color);
+    } */
+    
+    /* Establecer estilos para las secciones de productos */
+ /*    .products-section {
+    background-color: var(--tertiary-color);
+    color: var(--quaternary-color);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease-in-out;
+    }
+ */
+
+ /*    .portfolio-section {
+      background-color: #f8f8f8;
+      
+    } */
+    
+  /*   .contact-section {
+      background-color: #fff;
+    } */
+    
+   /*  .section-title {
+      font-size: 28px;
+      font-weight: 500;
+      margin: 0 0 20px 0;
+    } */
+    
+  /*   .section-description {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.5;
+      margin: 0 0 20px 0;
+    } */
+/*     
+    .container-port{
+      display: flex;
+      flex-direction: column;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+     */
+
+    
+/*     .portfolio-item {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 800px;
+      padding: 1rem;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .portfolio-item a {
+      display: block;
+      font-size: 14px;
+      font-weight: 400;
+      color: #999;
+      transition: color 0.2s;
+    }
+    
+    .portfolio-item a:hover {
+      color: #333;
+    } */
+    
+    /* Estilos para las imágenes en la lista del portafolio */
+    
+    
+    .portfolio-item img {
+      width: 250px; 
+    /*   height: auto;  */
+    /*   max-height: 50vw; 
+      max-height: 50vh; */
+    /*   object-fit: cover;  */
+      border-radius: 8px;  
+    }
+    
+    /* Estilos para el texto dentro de los elementos de la lista */
+    .portfolio-item p {
+      margin-top: 10px; 
+      font-size: 14px; 
+      font-weight: 500; 
+      text-align: center; 
+    }
+    
+    .contact-form {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .form-label,
+    .form-input,
+    .form-button {
+      width: 100%;
+    }
+    
+    .form-label {
+      font-size: 14px;
+      font-weight: 400;
+      margin: 0 0 10px 0;
+    }
+    
+    .contact-form #message {
+      resize: none;
+    }
+    
+    .form-input {
+      font-size: 16px;
+      font-weight: 400;
+      padding: 10px;
+      border: 1px solid #ddd;
+      transition: border-color 0.2s;
+    }
+    
+    .form-input:focus {
+      border-color: #333;
+    }
+    
+    .form-button {
+      font-size: 14px;
+      font-weight: 400;
+      padding: 10px 20px;
+      border: none;
+      background-color: #333;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    
+    .form-button:hover {
+      background-color: #666;
+    }

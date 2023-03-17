@@ -1,0 +1,37 @@
+const menuBtn = document.getElementById('menu-toggle');
+const menu = document.getElementById('menu');
+
+menuBtn.addEventListener('click', () => {
+  menu.classList.toggle('menu-hidden');
+  menuBtn.classList.toggle('menu-open');
+});
+
+
+
+
+/* // Obtener el botón y el menú
+const menuToggle = document.querySelector("#menu-toggle");
+const navigation = document.querySelector("nav");
+
+// Agregar un evento al botón para mostrar/ocultar el menú
+menuToggle.addEventListener("click", () => {
+  navigation.classList.toggle("show");
+}); */
+
+////////////////
+
+/* $(document).ready(function() {
+    $("#menu-toggle").click(function() {
+    $("#hamburger-menu").slideToggle();
+  });
+    });
+ */
+
+    //////////////////
+
+/* var menuToggle = document.getElementById("menu-toggle");
+var navigation = document.getElementsByClassName("navigation")[0];
+
+menuToggle.addEventListener("click", function() {
+navigation.classList.toggle("responsive-nav");
+}); */
