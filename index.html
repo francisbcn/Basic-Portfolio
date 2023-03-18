@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio de Francis Pama</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d80044a3f4.js" crossorigin="anonymous"></script>
@@ -19,24 +21,45 @@
   </head>
   <body>
     <header>
-      <div class="container">
-        <h1 class="site-title">Francis Pama's Portfolio</h1>
-        <img src="images/portada-francis-pama.jpg" alt="francis pama main picture smiling">         
+      <section class="title-section container">
+        <h1 class="site-title">
+          <span class="last-name">
+            <span class="vertical-text">García</span> <span class="last-name1">Pama</span> 
+            <span class="circle2"></span>
+          </span><br><br>
+          <span class="subtitle">Diseñador de moda,</span>
+          <span class="subtitle"> Desarrollador Front-End y Fotógrafo, Emprendedor</span>
+          <span class="first-name">Francis</span>
+          <div class="title-decor">
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+          </div>
+        </h1>
+      </section>    
+      <div class="container2">     
+        <div class="header-content">
+          <div class="header-container">
+            <a href="index.html"><img src="images/portada-francis-pama.jpg" alt="francis pama main picture smiling"> </a>
+          </div>
+        </div>
         <button id="menu-toggle" class="menu-btn menu-hidden">
           <i class="fa-solid fa-angle-down"></i> Desplegar Menu
-          </button>
+        </button>
         <nav class="navigation">
           <ul id="menu" class="menu-hidden">
             <li><a class="nav-link" href="#home">Inicio</a></li>
-            <li><a class="nav-link" href="#about">sobre Me</a></li>
+            <li><a class="nav-link" href="#about">Sobre Mí</a></li>
             <li><a class="nav-link" href="#portfolio">Portafolio</a></li>
+            <li><a class="nav-link" href="#tienda">tienda</a></li>
             <li><a class="nav-link" href="#contact">Contacto</a></li>
             <li><button id="english-button"><i class="fa-solid fa-language"></i></button></li>
           </ul>
         </nav>
       </div>
     </header>
-
     <main>
       <section id="home" class="section home-section">
         <div class="container card">
@@ -63,38 +86,89 @@
       </section>
       <section id="portfolio" class="section portfolio-section">
         <div class="container-port">
-          <h2 class="section-title">Portafolio</h2>
-          <p class="section-description">Aquí hay algunos ejemplos de mi trabajo:</p>
+          <h2 class="section-title">Diseño Grafíco, brandding e imagen de marca</h2>
+    <!--       <p class="section-description">Aquí hay algunos ejemplos de mi trabajo:</p> -->
           <div class="text">
-            <h4 class="text-header">Herramientas</h4>
+            <h4 class="text-header">Herramientas:</h4>
             <ul class="tags">
               <li>Photoshop</li>
               <li>Illustrator</li>
               <li>Premiere</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
             </ul>
           </div>
           <ul class="portfolio-list">
             <li class="portfolio-item">
               <a href="https://www.instagram.com/themilkbarcelona/" target="_blank" rel="noopener">
                 <img src="images/the-milk-barcelona.jpg" alt="The Milk Barcelona">
-                <p>The Milk Barcelona</p>
+                <h3>The Milk Barcelona</h3>
+                <p>Marca de ropa inclusiva y hecha en Barcelona con mucho amor y pasión. Desde 2018, "<span class="keyword">The Milk Barcelona</span>" ha sido mi proyecto de emprendimiento en el que me he encargado de todo el proceso creativo, desde el diseño gráfico y fotográfico hasta la confección y venta en línea.</p>
               </a>
-            </li>
+            </li>           
             <li class="portfolio-item">
               <a href="https://www.instagram.com/pamagarciafrancis/" target="_blank" rel="noopener">
                 <img src="images/pamagarcia.jpg" alt="PamaGarcia">
-                <p>PamaGarcia By Francis</p>
+                <h3>PamaGarcia By Francis</h3>
+                <p> <span class="keyword">PamaGarcia</span>, creada en 2020 con sede en Barcelona, España. Estilo minimalista, femenino e inclusivo, cada pieza es creada con gran atención al detalle y amor por la confección. Francis, el fundador, se encarga de todo el proceso de diseño y producción en su taller, asegurando que cada prenda sea única y adaptada a las necesidades de cada cliente.</p>
               </a>
             </li>
             <li class="portfolio-item">
-              <a href="https://www.instagram.com/carmus_deco_art/" target="_blank" rel="noopener">
+              <a href="https://www.instagram.com/carmus_deco_art/" target="_blank" LOrel="noopener">
                 <img src="images/carmus-deco-art.jpg" alt="CARMUS DECO ART">
-                <p>Carmus Deco Art</p>
+                <h3>Carmus Deco Art</h3>
+                <p><span class="keyword">Carmus Deco Art</span> es una tienda online de decoración artesanal. Desde el diseño de la marca y el logo hasta las redes sociales, hemos trabajado en todo el proceso para crear una imagen coherente y atractiva. Encuentra piezas únicas y hechas a mano para dar vida a cualquier espacio.</p>
               </a>
             </li>
           </ul>
         </div>
-      </section>   
+      </section>  
+      <section id="clothing" class="section clothing-section container">
+        <div class="container-clothing">
+          <h2 class="section-title">Diseños de Ropa</h2>
+      <!--     <div class="text">
+            <h4 class="text-header">Diseño a Medida:</h4>
+          </div> -->
+          <div class="text">
+            <h4 class="text-header">Competencias:</h4>
+            <ul class="tags">
+                <li>Diseño de moda</li>
+                <li>Fotografía y video</li>
+                <li>Corte y confección</li>
+                <li>Patronaje</li>
+                <li>Edición de imágenes en Photoshop</li>
+                <li>Creación de gráficos vectoriales en Illustrator</li>
+                <li>Edición de video en Premiere</li>
+            </ul>
+        </div>
+          <ul class="clothing-list">
+            <li class="clothing-item">
+              <a href="#">
+                <img src="images/african-heute-couture-dress-pamagarcia.jpg" alt="Diseño de Ropa 1">
+                <h3>African heute Couture</h3>
+                <p>Vestido Dama De Honor Estilo Africano ~ Sumérgete en una experiencia exótica con nuestros vibrantes prints, sensuales siluetas ajustadas y el movimiento de nuestros vuelos sirena. Te llevarán a un estado de trance y te harán sentir la fuerza y la belleza de África.</p>
+              </a>
+            </li>
+            <li class="clothing-item">
+              <a href="#">
+                <img src="images/pamagarcia-shirt-magazine.jpg" alt="Diseño de Ropa 2">
+                <h3>Camisa Print & Denim</h3>
+                <p>Añade un toque de seducción a tu estilo con nuestras prendas de mujer con diseños exóticos y sensuales. El estampado animal y las siluetas ajustadas te harán sentir irresistible y poderosa.</p>
+              </a>
+            </li>
+            <li class="clothing-item">
+              <a href="#">
+                <img src="images/pamagarcia.-clothing-heute-couture.jpg" alt="Diseño de Ropa 3">
+                <h3>Cromatica Heute Couture</h3>
+                <p>Descubre la esencia de la elegancia con nuestra colección Cromática. Inspirada en el diseño de alta costura y confeccionada a mano en Barcelona, cada prenda está cuidadosamente elaborada
+       para realzar tu estilo y destacar en cualquier ocasión.</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+       
       <section id="tienda">
         <div class="container">
           <h2 class="section-title">Tienda</h2>
@@ -102,69 +176,89 @@
             <picture class="col-md-6">
               <img src="images/portada-the-milk-barcelona.jpg" alt="The Milk Barcelona" class="img-fluid">
             </picture>
-            <div class="col-md-6">
+            <div>
               <h3 class="subheading">The Milk Barcelona</h3>
-              <p>Soy una marca de ropa inclusiva y local, hecha en Barcelona. Diseñamos ropa que refleja nuestro amor por la ciudad, su cultura y su gente. Nuestros productos están disponibles en Etsy y Amazon.</p>
-              <p>Mi ropa es de alta calidad y está diseñada para ser cómoda y duradera. Nos enorgullece ser inclusivos y representar a la comunidad de Barcelona en nuestras prendas.</p>
+              <p>Es una marca de ropa inclusiva y local, hecha en Barcelona. Desde el 2018 diseño ropa que refleja el amor por la ciudad, su cultura y su gente. Nuestros productos están disponibles en Etsy y Amazon.</p>
+              <p>Mi ropa es de alta calidad y está diseñada para ser cómoda y duradera. Me enorgullece ser inclusivo y representar a la comunidad de Barcelona en mis prendas.</p>
             </div>
           </div>
           <section id="shop" class="section shop-section">
             <div class="container-shop">
-              <h2 class="section-title">Tienda</h2>
-              <p class="section-description">Mira algunos de nuestros productos:</p>
+              <h2 class="section-title">algunos Productos</h2>
+           <!--    <p class="section-description"></p> -->
               <ul class="shop-list">
                 <li class="shop-item">
-                  <a href="#">
+                  <a href="https://www.etsy.com/es/listing/1235911836/crop-top-hombre-camiseta-corta-tops?ref=listings_manager_grid">
                     <img src="images/crop-top-the-milk-barcelona.jpg" alt="Producto 1">
-                    <h4>Producto 1</h4>
-                    <p class="price">$29.99</p>
+                    <h4>Crop Top</h4>
+                    <p class="price">20,00€</p>
+                  </a>
+                </li>  
+                <li class="shop-item">
+                  <a href="https://www.etsy.com/es/listing/1224409778/camiseta-tirantes-coral-camiseta-gym?ref=listings_manager_grid">
+                    <img src="images/tank-top-gym-blond-the-milk-barcelona.jpg" alt="Producto 3">
+                    <h4>Camiseta Tirantes Gym</h4>
+                    <p class="price">20,00€</p>
                   </a>
                 </li>
                 <li class="shop-item">
-                  <a href="#">
+                  <a href="https://www.etsy.com/es/listing/1266320895/pantalon-vaquero-corto-azul-claro?ref=listings_manager_grid">
+                    <img src="images/2deninm-azul-claro-brokens-the-milk-barcelona.jpg" alt="Producto 2">
+                    <h4>Short Vaquero Corto Azul Claro</h4>
+                    <p class="price">35,00€</p>
+                  </a>
+                </li>
+                <li class="shop-item">
+                  <a href="https://www.etsy.com/es/listing/1236618641/pantalon-corto-deportivo-pantalon-corto?ref=listings_manager_grid">
+                    <img src="images/short-grey-the-milk-barcelona.jpg" alt="Producto 4">
+                    <h4>Pantalon corto deportivo</h4>
+                    <p class="price">20,00€</p>
+                  </a>
+                </li>
+                <li class="shop-item">
+                  <a href="https://www.etsy.com/es/listing/1310550491/pantalon-corto-deportivo-pantalon-corto?ref=listings_manager_grid">
+                    <img src="images/short-azul-navy-gym-the-milk-barcelona.jpg" alt="Producto 4">
+                    <h4>Pantalon Corto Bordado Gym</h4>
+                    <p class="price">35,00€</p>
+                  </a>
+                </li>
+                <li class="shop-item">
+                  <a href="https://www.etsy.com/es/listing/1297959594/collar-hematita-negra-piedras-naturales?ref=listings_manager_grid">
+                    <img src="images/COLLAR-HEMATITA-NEGRO-THE-MILK-BARCELONA-LADO-INSTAGRAM.jpg" alt="Producto 4">
+                    <h4>Collar hematita negra</h4>
+                    <p class="price">59,00€</p>
+                  </a>
+                </li>
+                <li class="shop-item">
+                  <a href="https://www.etsy.com/es/listing/1237722723/camiseta-tirantes-verde-camiseta-gym?ref=listings_manager_grid">
                     <img src="images/camiseta-tirantes-verde-gym-the-milk-barcelona.jpg" alt="Producto 2">
                     <h4>Producto 2</h4>
-                    <p class="price">$19.99</p>
+                    <p class="price">20,00€</p>
                   </a>
                 </li>
                 <li class="shop-item">
-                  <a href="#">
-                    <img src="images/JOEL-RUBIO-CARA-CERCA-THE-MILK-BARCELONA.jpg" alt="Producto 3">
-                    <h4>Producto 3</h4>
-                    <p class="price">$39.99</p>
+                  <a href="https://www.etsy.com/es/listing/1249845689/pantalon-corto-azul-claro-pantalones?ref=listings_manager_grid">
+                    <img src="images/short-denim-the-milk-light-blue-skinny.jpg" alt="Producto 2">
+                    <h4>Short Denim Azul Claro</h4>
+                    <p class="price">35,00€</p>
                   </a>
                 </li>
                 <li class="shop-item">
-                  <a href="#">
-                    <img src="images/short-grey-the-milk-barcelona.jpg" alt="Producto 4">
-                    <h4>Producto 4</h4>
-                    <p class="price">$49.99</p>
-                  </a>
-                </li>
-                <li class="shop-item">
-                  <a href="#">
-                    <img src="images/short-azul-navy-gym-the-milk-barcelona.jpg" alt="Producto 4">
-                    <h4>Producto 4</h4>
-                    <p class="price">$49.99</p>
-                  </a>
-                </li>
-                <li class="shop-item">
-                  <a href="#">
-                    <img src="images/COLLAR-HEMATITA-NEGRO-THE-MILK-BARCELONA-LADO-INSTAGRAM.jpg" alt="Producto 4">
-                    <h4>Producto 4</h4>
-                    <p class="price">$49.99</p>
+                  <a href="https://www.etsy.com/es/listing/1211875180/camiseta-tirantes-amarilla-bordado?ref=listings_manager_grid">
+                    <img src="images/camiseta-verano-amarilla-piña-the-milk-barcelona.jpg" alt="Producto 2">
+                    <h4>Camiseta Tirantes Yoga</h4>
+                    <p class="price">20,00€</p>
                   </a>
                 </li>
               </ul>
             </div>
           </section>          
-          <div>
-              <a href="https://www.etsy.com/shop/TheMilkBarcelona" target="_blank" class="btn btn-primary">Ir a la tienda en Etsy</a>
-              <a href="https://www.amazon.es/s?rh=n%3A2846220031%2Cp_4%3AThe+Milk+Barcelona&ref=bl_sl_s_ap_web_2846220031" target="_blank" class="btn btn-secondary">Ir a la tienda en Amazon</a>
-            </div>
-        </div>
-      </section>
-       
+          <div class="button-container">
+            <a href="https://www.etsy.com/shop/TheMilkBarcelona" target="_blank" class="btn btn-primary btn-accent-2">Ir a la tienda en Etsy</a>
+            <a href="https://www.amazon.es/s?rh=n%3A2846220031%2Cp_4%3AThe+Milk+Barcelona&ref=bl_sl_s_ap_web_2846220031" target="_blank" class="btn btn-secondary btn-accent-3">Ir a la tienda en Amazon</a>
+          </div>
+          
+      </section>  
       <section id="contact" class="section contact-section">
         <div class="container">
           <h2 class="section-title">Contacto</h2>

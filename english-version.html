@@ -1,121 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Francis Pama's Portfolio</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/d80044a3f4.js" crossorigin="anonymous"></script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QWL0VJBNXX"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-QWL0VJBNXX');
-    </script>
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <h1 class="site-title">Francis Pama's Portfolio</h1>
-        <img src="images/portrait-francis.jpg" alt="francis pama main picture smiling">         
-         <button id="menu-toggle" class="menu-btn menu-hidden">
-          <i class="fa-solid fa-angle-down"></i> Menu
-          </button>
-        <nav class="navigation">
-          <ul id="menu" class="menu-hamburguesa">
-            <li><a class="nav-link" href="#home">Home</a></li>
-            <li><a class="nav-link" href="#about">About Me</a></li>
-            <li><a class="nav-link" href="#portfolio">Portafolio</a></li>
-            <li><a class="nav-link" href="#contact">Contact</a></li>
-            <li><button id="english-button"><i class="fa-solid fa-language"></i></button></li>
-          </ul>
 
-        </nav>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Francis Pama's Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d80044a3f4.js" crossorigin="anonymous"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QWL0VJBNXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-QWL0VJBNXX');
+  </script>
+</head>
+
+<body>
+  <header>
+    <section class="title-section container">
+      <h1 class="site-title">
+        <span class="last-name">
+          <span class="vertical-text">García</span> <span class="last-name1">Pama</span>
+          <span class="circle2"></span>
+        </span><br><br>
+        <span class="subtitle">Fashion Designer, Front-End Developer, and Photographer, Entrepreneur</span><br>
+        <span class="first-name">Francis</span>
+        <div class="title-decor">
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+        </div>
+      </h1>
+    </section>
+    <div class="container2">
+      <div class="header-content">
+        <div class="header-container">
+          <a href="index.html"><img src="images/portada-francis-pama.jpg" alt="francis pama main picture smiling"> </a>
+        </div>
+        <!-- <img src="images/portada-francis-pama.jpg" alt="francis pama main picture smiling">   -->
       </div>
-    </header>
-    <main>
-      <section id="home" class="section home-section">
-        <div class="container">
-          <h2 class="section-title">Welcome to my portfolio!</h2>
-          <p>I am a fashion designer, <span>pattern maker</span> and <span>full-stack web developer</span> based in Barcelona, ​​Spain. I have a solid foundation in fashion design and garment construction, as well as experience building and maintaining websites. I am also <span>self-taught</span> in graphic design and community management. I am passionate about entrepreneurship and I am constantly looking for new challenges and opportunities to show my skills. <br/> Thank you for visiting my portfolio website. I hope you enjoy exploring my work.</p>
-        </div>
-      </section>
-      <section id="about" class="section about-section">
-        <div class="container">
-          <h2 class="section-title">About Me</h2>
-          <p class="section-description">I am a designer and developer with many skills and a passion for fashion and technology. I began my fashion career in 2013 and launched my first fashion project, a clothing brand called "The Milk Barcelona," in 2018.</p>
-          <p>I am a multi-talented <span>designer</span> and <span>developer</span> with a passion for <span>fashion</span> and <span>technology</span>. I started my career in fashion in 2013 and launched my first fashion project, a clothing brand called "The Milk Barcelona," in 2018. Since then, I have worked on numerous fashion projects, gained specialization in <span>haute couture</span>, and gained proficiency in design software like <span>CLO3D</span>, <span>GERBER</span>, <span>Photoshop</span>, and <span>Illustrator</span>. In 2022, I decided to pursue a career in <span>web development</span> and have been studying front-end and back-end development since then.</p>
+      <button id="menu-toggle" class="menu-btn menu-hidden">
+        <i class="fa-solid fa-angle-down"></i> Expand Menu
+      </button>
+      <nav class="navigation">
+        <ul id="menu" class="menu-hidden">
+          <li><a class="nav-link" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#about">About Me</a></li>
+          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link" href="#tienda">Shop</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+          <li><button id="english-button"><i class="fa-solid fa-language"></i></button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section id="home" class="section home-section">
+      <div class="container card">
+        <h2 class="section-title">Welcome to my portfolio!</h2>
+        <p>I am a fashion designer, <span>pattern maker</span>, and <span>full-stack web developer</span> based in
+          Barcelona, Spain. I have a strong foundation in fashion design and garment construction, as well as experience
+          in creating and maintaining websites.</p>
+        <p>I am also a <span>self-taught</span> graphic designer and community manager. I am passionate about
+          entrepreneurship and constantly seek new challenges and opportunities to showcase my skills.</p>
+        <p>Thank you for visiting my portfolio website. I hope you enjoy exploring my work.</p>
+      </div>
+    </section>
+    <section id="about" class="section about-section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-description">I am a multifaceted <span>designer</span> and <span>developer</span> with a
+          passion for <span>fashion</span> and <span>technology</span>. I began my career in fashion in 2013 and
+          launched my first fashion project, a clothing brand called "The Milk Barcelona," in 2018.</p>
+        <p>I specialize in <span>haute couture</span> and have acquired skills in design software such as
+          <span>CLO3D</span>, <span>GERBER</span>, <span>Photoshop</span>, and <span>Illustrator</span>. In 2022, I
+          decided to pursue a career in <span>web development</span> and have been studying front-end and back-end
+          development since then.
+        </p>
+        <p>I enjoy creating a cohesive brand identity for my projects and bringing creative ideas to life. I am always
+          looking for new ways to improve my skills and share my knowledge through my <span>creative work</span>. I am
+          excited to see where my passions for fashion, design, and technology take me in the future. Thank you for
+          reading and learning more about my journey. You can connect with me on social media at the following links:
+        </p>
 
-          <p>I enjoy creating a cohesive brand identity for my projects and bringing creative ideas to life. I am always looking for new ways to improve my skills and share my knowledge through my <a href="creates.html"><span>creative work</span></a>. I am excited to see where my passions for fashion, <span>design</span>, and technology take me in the future. Thank you for reading &#128522; and learning more about my journey. You can connect with me on social media at the following links:</p>
-          
-          <ul>
-            <li><a href="https://www.instagram.com/itsfrancis.bcn" target="_blank" rel="noopener">Instagram</a></li>
-            <li><a href="https://twitter.com/milkbarcelona_" target="_blank" rel="noopener">Twitter</a></li>
-            <li><a href="https://codepen.io/francis-pama" target="_blank" rel="noopener">Codepen</a></li>
-            <li><a href="https://www.linkedin.com/in/francispama" target="_blank" rel="noopener">LinkedIn</a></li>
+        <ul>
+          <li><a href="https://www.instagram.com/itsfrancis.bcn" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://twitter.com/milkbarcelona_" target="_blank" rel="noopener">Twitter</a></li>
+          <li><a href="https://codepen.io/francis-pama" target="_blank" rel="noopener">Codepen</a></li>
+          <li><a href="https://www.linkedin.com/in/francispama" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+    </section>
+    <section id="portfolio" class="section portfolio-section">
+      <div class="container-port">
+        <h2 class="section-title1">Portfolio</h2>
+        <!--       <p class="section-description">Here are some examples of my work:</p> -->
+        <div class="text">
+          <h4 class="text-header">Tools and Works:</h4>
+          <ul class="tags">
+            <li>Photoshop</li>
+            <li>Illustrator</li>
+            <li>Premiere</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
           </ul>
         </div>
-      </section>
-      <section id="portfolio" class="section portfolio-section">
-        <div class="container">
-          <h2 class="section-title">Portfolio</h2>
-          <p class="section-description">Here are some examples of my work:</p>
-          <ul class="portfolio-list">
-            <li class="portfolio-item">
-              <a href="https://www.instagram.com/themilkbarcelona/">
-                <img src="images/the-milk-barcelona.jpg" alt="The Milk Barcelona">
-                <p>The Milk Barcelona</p>
-              </a>
-            </li>
-            <li class="portfolio-item">
-              <a href="https://www.instagram.com/pamagarciafrancis/">
-                <img src="images/pamagarcia.jpg" alt="PamaGarcia">
-                <p>PamaGarcia By Francis</p>
+        <ul class="portfolio-list">
+          <li class="portfolio-item">
+            <a href="https://www.instagram.com/themilkbarcelona/" target="_blank" rel="noopener">
+              <img src="images/the-milk-barcelona.jpg" alt="The Milk Barcelona">
+              <h3>The Milk Barcelona</h3>
+              <p>Inclusive clothing brand made with love and passion in Barcelona since 2018. "<span class="keyword">The
+                  Milk Barcelona</span>" has been my entrepreneurship project in which I have been responsible for the
+                entire creative process, from graphic and photographic design to online sale and confection.</p>
             </a>
           </li>
           <li class="portfolio-item">
-            <a href="https://www.instagram.com/carmus_deco_art/">
+            <a href="https://www.instagram.com/pamagarciafrancis/" target="_blank" rel="noopener">
+              <img src="images/pamagarcia.jpg" alt="PamaGarcia">
+              <h3>PamaGarcia By Francis</h3>
+              <p> <span class="keyword">PamaGarcia</span>, created in 2020 and based in Barcelona, Spain. Minimalist,
+                feminine, and inclusive style, each piece is created with great attention to detail and love for the
+                confection. Francis, the founder, is responsible for the entire design and production process in his
+                workshop, ensuring that each garment is unique and adapted to the needs of each client.</p>
+            </a>
+          </li>
+          <li class="portfolio-item">
+            <a href="https://www.instagram.com/carmus_deco_art/" target="_blank" rel="noopener">
               <img src="images/carmus-deco-art.jpg" alt="CARMUS DECO ART">
-              <p>Carmus Deco Art</p>
+              <h3>Carmus Deco Art</h3>
+              <p><span class="keyword">Carmus Deco Art</span> is an online store for handmade decoration. From brand and
+                logo design to social media, we have worked on the entire process to create a consistent and attractive
+                image. Find unique and handmade pieces to bring life to any space.</p>
             </a>
           </li>
         </ul>
       </div>
     </section>
-    <section id="contact" class="section contact-section">
+    <section id="store">
       <div class="container">
-        <h2 class="section-title">Contact</h2>
-        <p class="section-description">If you want to get in touch with me, please fill out the form or contact me through the following social media:</p>
-        <ul class="social-media-list">
-          <li class="social-media-item">
-            <a href="https://www.instagram.com/itsfrancis.bcn">
-              <i class="fab fa-instagram"></i>
-              <span>@itsfrancis.bcn</span>
-            </a>
-          </li>
-          <li class="social-media-item">
-            <a href="https://www.linkedin.com/in/francis-pama-garcia/">
-              <i class="fab fa-linkedin"></i>
-              <span>Francis Pama Garcia</span>
-            </a>
-          </li>
-          <li class="social-media-item">
-            <a href="mailto:francis.pama@hotmail.com">
-              <i class="fas fa-envelope"></i>
-              <span>francis.pama@hotmail.com</span>
-            </a>
-          </li>
-        </ul>
-      </div>
+        <h2 class="section-title">Store</h2>
+        <div class="row">
+          <picture class="col-md-6">
+            <img src="images/cover-the-milk-barcelona.jpg" alt="The Milk Barcelona" class="img-fluid">
+          </picture>
+          <div>
+            <h3 class="subheading">The Milk Barcelona</h3>
+            <p>It is an inclusive and local clothing brand, made in Barcelona. Since 2018, I design clothes that reflect
+              love for the city, its culture, and its people. Our products are available on Etsy and Amazon.</p>
+            <p>My clothes are high-quality and designed to be comfortable and durable. I am proud to be inclusive and
+              represent the Barcelona community in my garments.</p>
+          </div>
+        </div>
+        <section id="shop" class="section shop-section">
+          <div class="container-shop">
+            <h2 class="section-title">Some Products</h2>
+            <!--    <p class="section-description"></p> -->
+            <ul class="shop-list">
+              <li class="shop-item">
+                <a
+                  href="https://www.etsy.com/es/listing/1235911836/crop-top-hombre-camiseta-corta-tops?ref=listings_manager_grid">
+                  <img src="images/crop-top-the-milk-barcelona.jpg" alt="Product 1">
+                  <h4>Crop Top</h4>
+                  <p class="price">20,00€</p>
+                </a>
+              </li>
+              <li class="shop-item">
+                <a
+                  href="https://www.etsy.com/es/listing/1224409778/camiseta-tirantes-coral-camiseta-gym?ref=listings_manager_grid">
+                  <img src="images/tank-top-gym-blond-the-milk-barcelona.jpg" alt="Product 3">
+                  <h4>Gym Tank Top</h4>
+                  <p class="price">20,00€</p>
+                </a>
+              </li>
+              <li class="shop-item">
+                <a
+                  href="https://www.etsy.com/es/listing/1266320895/pantalon-vaquero-corto-azul-claro?ref=listings_manager_grid">
+                  <img src="images/2deninm-azul-claro-brokens-the-milk-barcelona.jpg" alt="Product 2">
+                  <h4>Light Blue Short Denim Pants</h4>
+                  <p class="price">35,00€</p>
+                </a>
+              </li>
+              <li class="shop-item">
+                <a
+                  href="https://www.etsy.com/es/listing/1236618641/pantalon-corto-deportivo-pantalon-corto?ref=listings_manager_grid">
+                  <img src="images/short-grey-the-milk-barcelona.jpg" alt="Product 4">
+                  <h4>Sport Shorts</h4>
+                  <p class="price">20,00€</p>
+                </a>
+              </li>
+              <li class="shop-item">
+                <a
+                  href="https://www.etsy.com/es/listing/1310550491/pantalon-corto-deportivo-pantalon-corto?ref=listings_manager_grid">
+                  <img src="images/short-azul-navy-gym-the-milk-barcelona.jpg" alt="Product 4">
+                  <h4>Gym Embroidered Sport Shorts</h4>
+                  <p class="price">35.00€</p>
+                </a>
+              </li>
+              <li class="shop-item">
+                <a
+                  href="https://www.etsy.com/es/listing/1297959594/collar-hematita-negra-piedras-naturales?ref=listings_manager_grid">
+                  <img src="images/COLLAR-HEMATITA-NEGRO-THE-MILK-BARCELONA-LADO-INSTAGRAM.jpg" alt="Product 4">
+                  <h4>Black Hematite Necklace</h4>
+                  <p class="price">59.00€</p>
+                </a>
+              </li>
+              <li class="shop-item">
+                <a
+                  href="https://www.etsy.com/es/listing/1237722723/camiseta-tirantes-verde-camiseta-gym?ref=listings_manager_grid">
+                  <img src="images/camiseta-tirantes-verde-gym-the-milk-barcelona.jpg" alt="Product 2">
+                  <h4>Product 2</h4>
+                  <p class="price">20.00€</p>
+                </a>
+              </li>
+              <li class="shop-item">
+                <a
+                  href="https://www.etsy.com/es/listing/1249845689/pantalon-corto-azul-claro-pantalones?ref=listings_manager_grid">
+                  <img src="images/short-denim-the-milk-light-blue-skinny.jpg" alt="Product 2">
+                  <h4>Light Blue Denim Shorts</h4>
+                  <p class="price">35.00€</p>
+                </a>
+              </li>
+              <li class="shop-item">
+                <a
+                  href="https://www.etsy.com/es/listing/1211875180/camiseta-tirantes-amarilla-bordado?ref=listings_manager_grid">
+                  <img src="images/camiseta-verano-amarilla-piña-the-milk-barcelona.jpg" alt="Product 2">
+                  <h4>Yoga Tank Top</h4>
+                  <p class="price">20.00€</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <div class="button-container">
+          <a href="https://www.etsy.com/shop/TheMilkBarcelona" target="_blank"
+            class="btn btn-primary btn-accent-2">Visit Store on Etsy</a>
+          <a href="https://www.amazon.es/s?rh=n%3A2846220031%2Cp_4%3AThe+Milk+Barcelona&ref=bl_sl_s_ap_web_2846220031"
+            target="_blank" class="btn btn-secondary btn-accent-3">Visit Store on Amazon</a>
+        </div>
     </section>
     <section id="contact" class="section contact-section">
       <div class="container">
         <h2 class="section-title">Here as well :D</h2>
-        <p class="section-description">Also You can contact me through [your email address] or by completing the form below:</p>
+        <p class="section-description">Also You can contact me through [your email address] or by completing the form
+          below:</p>
         <form class="contact-form" action="send-email.php" method="post" onsubmit="return validateForm()">
           <label for="name" class="form-label">Name:</label><br>
           <input type="text" id="name" name="name" class="form-input"><br>
@@ -124,27 +259,31 @@
           <label for="message" class="form-label">Message:</label><br>
           <textarea id="message" name="message" class="form-input"></textarea><br>
           <input type="submit" value="Submit" class="form-button">
-      </form>
-      <div id="error-message" style="display:none;"></div>
-      <div id="success-message" style="display:none;"></div>
-
+        </form>
+        <div id="error-message" style="display:none;"></div>
+        <div id="success-message" style="display:none;"></div>
       </div>
     </section>
   </main>
-    <footer>
-      <div class="container">
-        <h3>Let's get in touch ;) <span>Social Media</span> </h3>
+  <footer>
+    <div class="container">
+      <h3>Let's get in touch ;) <span>Social Media</span> </h3>
+      <ul>
         <ul>
-        <ul>
-          <li><a href="https://www.instagram.com/itsfrancis.bcn" target="_blank" rel="noopener"><i class="fab fa-instagram"></i> Instagram</a></li>
-          <li><a href="https://twitter.com/milkbarcelona_" target="_blank" rel="noopener"><i class="fab fa-twitter"></i> Twitter</a></li>
-          <li><a href="https://codepen.io/francis-pama" target="_blank" rel="noopener"><i class="fab fa-codepen"></i> Codepen</a></li>
-          <li><a href="https://www.linkedin.com/in/francispama" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-          <li><a href="https://github.com/francisbcn" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a></li>
-        </ul>         
+          <li><a href="https://www.instagram.com/itsfrancis.bcn" target="_blank" rel="noopener"><i
+                class="fab fa-instagram"></i> Instagram</a></li>
+          <li><a href="https://twitter.com/milkbarcelona_" target="_blank" rel="noopener"><i class="fab fa-twitter"></i>
+              Twitter</a></li>
+          <li><a href="https://codepen.io/francis-pama" target="_blank" rel="noopener"><i class="fab fa-codepen"></i>
+              Codepen</a></li>
+          <li><a href="https://www.linkedin.com/in/francispama" target="_blank" rel="noopener"><i
+                class="fab fa-linkedin"></i> LinkedIn</a></li>
+          <li><a href="https://github.com/francisbcn" target="_blank" rel="noopener"><i class="fab fa-github"></i>
+              GitHub</a></li>
+        </ul>
         <p class="copyright"></p>
-      </div>
-    </footer>
+    </div>
+  </footer>
   <script src="js/app.js"></script>
   <script src="js/time.js"></script>
   <script src="js/lenguage.js"></script>
@@ -153,4 +292,5 @@
 
 
 </body>
+
 </html>
