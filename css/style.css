@@ -746,10 +746,10 @@ margin-bottom: 2rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
   }
   
   .container-clothing {
-  max-width: 1200px;
   margin: 3rem 0;
   padding: 0 15px;
   text-align: center;
@@ -1140,7 +1140,7 @@ color: var(--accent-color-2);
   }
 
 
-  .clothing-item {
+  .clothing-item{
     flex-basis: 100%;
   }
 
@@ -1152,6 +1152,18 @@ color: var(--accent-color-2);
 
   .container {
     width: 100%;
+  }
+
+  .container-shop {
+    max-width: 90%;
+  }
+  .shop-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .shop-item img {
+    width: 100%;
+    height: auto;
   }
 
 }
@@ -1328,5 +1340,27 @@ color: var(--accent-color-2);
 
   .clothing-item {
     flex-basis: calc(50% - 10px);
+    }
+
+    .container-shop {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+    
+    .shop-item {
+      width: 100%;
+      margin: 0;
+    }
+    
+    .shop-item a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .shop-item h4 {
+      margin-top: 20px;
     }
 }
