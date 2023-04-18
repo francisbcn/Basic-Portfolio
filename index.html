@@ -13,6 +13,9 @@
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/d80044a3f4.js" crossorigin="anonymous"></script>
+  <link rel="alternate" hreflang="es" href="https://www.francispama.design/es/pagina" />
+
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-QWL0VJBNXX"></script>
   <script>
@@ -68,11 +71,21 @@
           </a>
         </div>
       </div>
-      <button id="menu-toggle" class="menu-btn menu-hidden">
-        <i class="fa-solid fa-angle-down"></i> Desplegar Menu
-      </button>
+      <div id="burguer" style="cursor:pointer" onclick="openNav()"><p style="font-size:2rem ">&#9776;</p><br> <p style="font-size: 2rem;">menu</p></div>
+
+                  <nav id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a  href="#home">Inicio</a>
+                        <a  href="#about">Sobre Mí</a>
+                        <a  href="#portfolio">Gráfico</a>
+                        <a  href="#clothing">Moda</a>
+                        <a  href="#tienda">Tienda</a>
+                        <a  href="#contact">Contacto</a>
+                        <button id="english-button"><i class="fa-solid fa-language"></i></button>
+                  </nav>
+                  
       <nav class="navigation">
-        <ul id="menu" class="menu-hidden">
+        <ul id="menu">
           <li><a class="nav-link" href="#home">Inicio</a></li>
           <li><a class="nav-link" href="#about">Sobre Mí</a></li>
           <li><a class="nav-link" href="#portfolio">Gráfico</a></li>
@@ -380,6 +393,12 @@
       <div class="container">
         <h2 class="section-title">Otra via?</h2>
         <p class="section-description">Puedes comunicarte conmigo a través del formulario a continuación:</p>
+        <div id="error">
+          <php
+
+          echo $error . $exito;
+          ?>
+    </div> 
         <form class="contact-form" action="send-email.php" method="post" onsubmit="return validateForm()">
           <label for="name" class="form-label">Nombre:</label><br>
           <input type="text" id="name" name="name" class="form-input"><br>
@@ -393,6 +412,7 @@
         <div id="success-message" style="display:none;"></div>
       </div>
     </section>
+
   </main>
   <footer>
     <div class="container">
@@ -416,7 +436,8 @@
   <script src="js/time.js"></script>
   <script src="js/lenguage.js"></script>
   <script src="js/form.js"></script>
-  <script src="js/menutoggle"></script>
+  <script src="js/sidenav.js"></script>
+<!--   <script src="js/menutoggle"></script> -->
 </body>
 
 </html>

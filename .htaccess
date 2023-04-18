@@ -1,0 +1,44 @@
+# Proteger el archivo .htaccess
+<Files .htaccess>
+  Order allow,deny
+  Deny from all
+</Files>
+
+# Evitar que se muestren las extensiones de archivo
+Options -Indexes
+
+# Bloquear la ejecución de scripts en ciertos directorios
+<Directory /var/www/html/admin>
+  Options -Indexes
+  AllowOverride None
+  Require all denied
+</Directory>
+
+# Bloquear el acceso a archivos específicos
+<Files config.php>
+  Order allow,deny
+  Deny from all
+</Files>
+
+# Establecer encabezados de seguridad adicionales
+<IfModule mod_headers.c>
+  Header set X-XSS-Protection "1; mode=block"
+  Header set X-Content-Type-Options nosniff
+  Header set X-Frame-Options SAMEORIGIN
+</IfModule>
+
+# Forzar el uso de HTTPS
+RewriteEngine On
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:CF-Visitor} !{"scheme":"https"}
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Personalizar el error 403
+ErrorDocument 403 /errors/403.html
+
+# Personalizar el error 404 y aplicar estilos
+ErrorDocument 404 /errors/404.php
+
+# Personalizar el error 4093
+ErrorDocument 4093 "Lo siento, ha ocurrido un error inesperado en el servidor."
