@@ -1,7 +1,8 @@
-const menuBtn = document.getElementById('menu-toggle');
-const menu = document.getElementById('menu');
+document.addEventListener('DOMContentLoaded', function () {
+  const burger = document.getElementById('burger');
+  const nav = document.getElementById('nav');
 
-menuBtn.addEventListener('click', () => {
-  menu.classList.toggle('menu');
-  menuBtn.classList.toggle('open');
+  burger.addEventListener('click', function () {
+    nav.classList.toggle('show');
+  });
 });
